@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake By Vijay</title>
+    <style>
+        @font-face{
+            font-family: 'Raleway';
+            src: url(Raleway-SemiBold.ttf);
+        }
+        div{
+            display: grid;
+        }
+        #snake{
+           margin: 0;
+           /* z-index: 0; */
+        }
+        div>button{
+            margin-left:460px;
+            margin-bottom:-50px;
+            font-family: Raleway;
+            color: palegoldenrod;
+            font-size: 25px;
+            width: 100px;
+            height: 50px;
+            z-index: 1;
+            border: none;
+            background: none;
+            /* background-color: seagreen; */
+        }
+        button:focus{
+            outline: none !important;
+        }
+        button:hover{
+            background-color: white;
+            opacity: 0.6;
+            color: brown;
+            transition: 0.5s ease-in;
+            /* border-radius: 25%; */
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div>
+        <button type="button" onClick="window.location.reload();">Restart</button>
+    </div>
+   <div>
+    <canvas id="snake" height="608" width="608">
+        
+    </canvas>
+   </div>
+   
+    <script src="snakeScript.js"></script>
+</body>
+</html>
